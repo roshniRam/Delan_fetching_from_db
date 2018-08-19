@@ -77,12 +77,12 @@ public class MainActivity extends AppCompatActivity {
         ordersListView = (ListView) findViewById(R.id.orders_list_view);
 
         final List<OrdersItem> orders = new ArrayList<OrdersItem>();
-//        orders.add(new OrdersItem("04","BE:555","Electrician","Pending",0,R.drawable.naruto));
-//        orders.add(new OrdersItem("04","BE:555","Electrician","Pending",0,R.drawable.naruto));
-//        orders.add(new OrdersItem("04","BE:555","Electrician","Pending",0,R.drawable.naruto));
-//        orders.add(new OrdersItem("04","BE:555","Electrician","Pending",0,R.drawable.naruto));
-//        orders.add(new OrdersItem("04","BE:555","Electrician","Pending",0,R.drawable.naruto));
-//        orders.add(new OrdersItem("04","BE:555","Electrician","Pending",0,R.drawable.naruto));
+        
+        //        Touch Feedback
+//        int[] attrs = new int[]{R.attr.selectableItemBackground};
+//        TypedArray typedArray = this.obtainStyledAttributes(attrs);
+//        int backgroundResource = typedArray.getResourceId(0, 0);
+//        ordersListView.setBackgroundResource(backgroundResource);
 
         ordersAdapter = new OrdersAdapter(this, (ArrayList<OrdersItem>) orders);
         ordersListView.setAdapter(ordersAdapter);
